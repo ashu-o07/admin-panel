@@ -1,16 +1,26 @@
-# React + Vite
+# 🧑‍💼 Mini Admin Panel
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A React-based admin dashboard for managing users with search, role-based filtering, and edit functionality. Built with clean component architecture and Dockerized for production deployment.
 
-Currently, two official plugins are available:
+✨ What this project demonstrates
+- Component-based React design
+- State lifting and data flow
+- Search and filter logic
+- Modal-based editing workflow
+- Frontend-only admin patterns
+- Docker + Nginx production setup
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+🛠️ Tech Stack
+- React (Vite)
+- JavaScript
+- Tailwind CSS
+- Docker
+- Nginx
 
-## React Compiler
+⚙️ Run Locally
+npm install
+npm run dev
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+🐳 Run with Docker
+docker build -t admin-panel .
+docker run -p 8080:80 admin-panel

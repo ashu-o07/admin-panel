@@ -1,6 +1,6 @@
 import { useState } from "react";
 import usersData from "../data/users";
-import UserTable from "../components/UserTable";
+import UserTable from "../components/UserTable.jsx";
 import Filters from "../components/Filters";
 import EditUserModal from "../components/EditUserModal";
 
